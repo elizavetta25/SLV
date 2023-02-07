@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\main_bg.jpg" />
+    <None Remove="Images\t1.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="2.1.1" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Core\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\main_bg.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\t1.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
